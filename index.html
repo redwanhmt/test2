@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ECIG Smart School</title>
+
+  <!-- Font Awesome للأيقونات -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom, #007bff, #00aaff);
+      color: white;
+      text-align: center;
+      padding-bottom: 40px;
+    }
+
+    .logo {
+      margin-top: 30px;
+    }
+
+    .logo img {
+      width: 180px;
+      max-width: 80%;
+      animation: fadeIn 1.2s ease;
+    }
+
+    .tagline {
+      font-size: 18px;
+      margin-top: 15px;
+      animation: slideDown 1s ease;
+    }
+
+    .buttons {
+      margin: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 14px;
+      border: none;
+      border-radius: 12px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn i {
+      margin-right: 10px;
+      font-size: 18px;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      opacity: 0.95;
+    }
+
+    .btn:active {
+      transform: scale(0.98);
+    }
+
+    .btn-whatsapp { background-color: #25D366; }
+    .btn-call { background-color: #FF3B30; }
+    .btn-facebook { background-color: #3b5998; }
+    .btn-instagram { background-color: #E1306C; }
+    .btn-website { background-color: #4e6881; }
+
+    .powered {
+      margin-top: 40px;
+      font-size: 14px;
+      background-color: rgba(255, 255, 255, 0.2);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 20px;
+      display: inline-block;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes slideDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media screen and (max-width: 480px) {
+      .btn {
+        width: 100%;
+        font-size: 15px;
+        padding: 13px;
+      }
+
+      .btn i {
+        margin-right: 8px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="logo">
+  <img src="ecig-logo.png" alt="Logo de l'école">
+</div>
+
+  <h2>APPELEZNOUS MAINTENANT</h2>
+
+  <div class="buttons">
+    <a href="https://wa.me/212639792208" class="btn btn-whatsapp">
+      <i class="fab fa-whatsapp"></i> Ajoutez-nous sur WhatsApp
+    </a>
+
+    <a href="tel:+212681461414" class="btn btn-call">
+      <i class="fas fa-phone"></i> Appelez-nous
+    </a>
+
+    <a href="https://www.facebook.com/ecigsidislimane1995" class="btn btn-facebook">
+      <i class="fab fa-facebook-f"></i> Like us on Facebook
+    </a>
+
+    <a href="https://instagram.com/ecig.ma" class="btn btn-instagram">
+      <i class="fab fa-instagram"></i> Follow us on Instagram
+    </a>
+
+    <a href="https://ecig.ma/" class="btn btn-website">
+      <i class="fas fa-globe"></i> Visitez notre site web
+    </a>
+  </div>
+
+  <div class="powered">Powered by REDWAN HMT</div>
+
+</body>
+</html>
